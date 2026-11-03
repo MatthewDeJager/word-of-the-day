@@ -4,150 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Word of the Day</title>
-<style>
-  :root {
-    --bg: #faf8f3;
-    --fg: #1a1a1a;
-    --muted: #6b6b6b;
-    --accent: #8b5a2b;
-    --card: #ffffff;
-    --border: #e8e4d9;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #1a1917;
-      --fg: #f0ede6;
-      --muted: #9a968a;
-      --accent: #d4a373;
-      --card: #26241f;
-      --border: #3a362f;
-    }
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { height: 100%; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--fg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1.5rem;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  .card {
-    width: 100%;
-    max-width: 520px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 2.5rem 1.75rem;
-    text-align: center;
-  }
-  .label {
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 0.72rem;
-    color: var(--muted);
-    margin-bottom: 1.75rem;
-  }
-  .word {
-    font-size: clamp(2.25rem, 8vw, 3.25rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--accent);
-    margin-bottom: 0.5rem;
-    word-break: break-word;
-  }
-  .pos {
-    font-style: italic;
-    color: var(--muted);
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-  }
-  .definition {
-    font-size: 1.05rem;
-    margin-bottom: 1.25rem;
-    text-align: left;
-  }
-  .example {
-    font-style: italic;
-    color: var(--muted);
-    font-size: 0.95rem;
-    text-align: left;
-    padding-left: 0.9rem;
-    border-left: 2px solid var(--border);
-    margin-bottom: 2rem;
-  }
-  button {
-    font: inherit;
-    background: var(--accent);
-    color: var(--bg);
-    border: none;
-    border-radius: 999px;
-    padding: 0.85rem 1.75rem;
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    min-height: 48px;
-    min-width: 160px;
-    transition: transform 0.1s ease, opacity 0.2s ease;
-  }
-  button:active { transform: scale(0.97); }
-  .hint {
-    display: block;
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-top: 1rem;
-  }
-</style>
+<meta name="description" content="A sophisticated, uncommon English word on every visit.">
+
+<!-- PWA / install -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1917" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Word of the Day">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
 </head>
 <body>
   <main class="card">
     <div class="label">Word of the Day</div>
     <h1 class="word" id="word">—</h1>
+    <div class="pronunciation" id="pronunciation" hidden></div>
     <div class="pos" id="pos">—</div>
     <p class="definition" id="definition">—</p>
-    <p class="example" id="example">—</p>
-    <button id="newWord" type="button">New word</button>
-    <span class="hint">or press space</span>
+    <p class="example" id="example" hidden></p>
+    <p class="synonyms" id="synonymsRow" hidden><span class="synonyms-label">Synonyms:</span> <span id="synonyms"></span></p>
+    <div class="actions">
+      <button id="newWord" type="button" disabled>New word</button>
+      <span class="hint">or press space</span>
+    </div>
   </main>
-
-<script>
-  const words = [
-    { word: "parlance", pos: "noun", definition: "A particular way of speaking or using words, especially one common to those with a particular job or interest.", example: "In legal parlance, the term 'tort' refers to a civil wrong." },
-    { word: "splendiferous", pos: "adjective", definition: "Splendid; magnificent; extraordinarily impressive.", example: "The ballroom's chandelier made for a truly splendiferous entrance." },
-    { word: "obstreperous", pos: "adjective", definition: "Noisy and difficult to control; unruly.", example: "The obstreperous toddler refused to leave the toy aisle." },
-    { word: "pellucid", pos: "adjective", definition: "Translucently clear; easily understood.", example: "Her pellucid prose made the dense theory suddenly accessible." },
-    { word: "sesquipedalian", pos: "adjective", definition: "Characterized by long words; given to using long words.", example: "His sesquipedalian lecture lost half the audience by the second slide." },
-    { word: "lugubrious", pos: "adjective", definition: "Looking or sounding sad and dismal, often to an exaggerated degree.", example: "The old hound greeted every visitor with a lugubrious sigh." },
-    { word: "perspicacious", pos: "adjective", definition: "Having a ready insight into and understanding of things.", example: "A perspicacious investor had warned about the collapse months in advance." },
-    { word: "insouciant", pos: "adjective", definition: "Showing a casual lack of concern; indifferent.", example: "He gave an insouciant shrug when asked about the deadline." },
-    { word: "quotidian", pos: "adjective", definition: "Of or occurring every day; commonplace or mundane.", example: "She found poetry in the quotidian routines of her neighbourhood." },
-    { word: "recondite", pos: "adjective", definition: "Little known; abstruse; dealing with obscure subject matter.", example: "The professor's recondite footnotes referenced manuscripts almost no one had read." }
-  ];
-
-  const $ = (id) => document.getElementById(id);
-  let last = -1;
-
-  function pick() {
-    let i = Math.floor(Math.random() * words.length);
-    if (words.length > 1 && i === last) i = (i + 1) % words.length;
-    last = i;
-    const w = words[i];
-    $("word").textContent = w.word;
-    $("pos").textContent = w.pos;
-    $("definition").textContent = w.definition;
-    $("example").textContent = "“" + w.example + "”";
-  }
-
-  $("newWord").addEventListener("click", pick);
-  window.addEventListener("keydown", (e) => {
-    if (e.code === "Space") { e.preventDefault(); pick(); }
-  });
-
-  pick();
-</script>
 </body>
 </html>

@@ -1,0 +1,338 @@
+[
+  {
+    "word": "parlance",
+    "pos": "noun",
+    "pronunciation": "PAR-luhns",
+    "definition": "A particular way of speaking or using words, especially one common to those with a particular job or interest.",
+    "example": "In legal parlance, the term 'tort' refers to a civil wrong.",
+    "synonyms": [
+      "jargon",
+      "idiom",
+      "vernacular",
+      "argot"
+    ]
+  },
+  {
+    "word": "splendiferous",
+    "pos": "adjective",
+    "pronunciation": "splen-DIF-er-uhs",
+    "definition": "Splendid; magnificent; extraordinarily impressive.",
+    "example": "The ballroom's chandelier made for a truly splendiferous entrance.",
+    "synonyms": [
+      "magnificent",
+      "resplendent",
+      "sumptuous"
+    ]
+  },
+  {
+    "word": "obstreperous",
+    "pos": "adjective",
+    "pronunciation": "uhb-STREP-er-uhs",
+    "definition": "Noisy and difficult to control; unruly.",
+    "example": "The obstreperous toddler refused to leave the toy aisle.",
+    "synonyms": [
+      "unruly",
+      "boisterous",
+      "rowdy",
+      "clamorous"
+    ]
+  },
+  {
+    "word": "pellucid",
+    "pos": "adjective",
+    "pronunciation": "puh-LOO-sid",
+    "definition": "Translucently clear; easily understood.",
+    "example": "Her pellucid prose made the dense theory suddenly accessible.",
+    "synonyms": [
+      "limpid",
+      "lucid",
+      "transparent",
+      "crystalline"
+    ]
+  },
+  {
+    "word": "sesquipedalian",
+    "pos": "adjective",
+    "pronunciation": "ses-kwi-puh-DAY-lee-uhn",
+    "definition": "Characterized by long words; given to using long words.",
+    "example": "His sesquipedalian lecture lost half the audience by the second slide.",
+    "synonyms": [
+      "long-winded",
+      "grandiloquent",
+      "verbose"
+    ]
+  },
+  {
+    "word": "lugubrious",
+    "pos": "adjective",
+    "pronunciation": "luh-GOO-bree-uhs",
+    "definition": "Looking or sounding sad and dismal, often to an exaggerated degree.",
+    "example": "The old hound greeted every visitor with a lugubrious sigh.",
+    "synonyms": [
+      "mournful",
+      "doleful",
+      "melancholy",
+      "funereal"
+    ]
+  },
+  {
+    "word": "perspicacious",
+    "pos": "adjective",
+    "pronunciation": "per-spi-KAY-shuhs",
+    "definition": "Having a ready insight into and understanding of things.",
+    "example": "A perspicacious investor had warned about the collapse months in advance.",
+    "synonyms": [
+      "discerning",
+      "astute",
+      "shrewd",
+      "perceptive"
+    ]
+  },
+  {
+    "word": "insouciant",
+    "pos": "adjective",
+    "pronunciation": "in-SOO-see-uhnt",
+    "definition": "Showing a casual lack of concern; indifferent.",
+    "example": "He gave an insouciant shrug when asked about the deadline.",
+    "synonyms": [
+      "nonchalant",
+      "carefree",
+      "blithe",
+      "unconcerned"
+    ]
+  },
+  {
+    "word": "quotidian",
+    "pos": "adjective",
+    "pronunciation": "kwoh-TID-ee-uhn",
+    "definition": "Of or occurring every day; commonplace or mundane.",
+    "example": "She found poetry in the quotidian routines of her neighbourhood.",
+    "synonyms": [
+      "everyday",
+      "mundane",
+      "workaday",
+      "humdrum"
+    ]
+  },
+  {
+    "word": "recondite",
+    "pos": "adjective",
+    "pronunciation": "REK-uhn-dyte",
+    "definition": "Little known; abstruse; dealing with obscure subject matter.",
+    "example": "The professor's recondite footnotes referenced manuscripts almost no one had read.",
+    "synonyms": [
+      "abstruse",
+      "arcane",
+      "esoteric",
+      "obscure"
+    ]
+  },
+  {
+    "word": "perspicacity",
+    "pos": "noun",
+    "pronunciation": "per-spi-KASS-i-tee",
+    "definition": "The quality of having a ready insight into things; shrewdness.",
+    "example": "Her perspicacity about market trends made her an invaluable advisor.",
+    "synonyms": [
+      "discernment",
+      "acumen",
+      "insight"
+    ]
+  },
+  {
+    "word": "ebullient",
+    "pos": "adjective",
+    "pronunciation": "i-BUL-yuhnt",
+    "definition": "Cheerful and full of energy; overflowing with enthusiasm.",
+    "example": "The ebullient host greeted every guest as though they were an old friend.",
+    "synonyms": [
+      "exuberant",
+      "buoyant",
+      "effervescent"
+    ]
+  },
+  {
+    "word": "pusillanimous",
+    "pos": "adjective",
+    "pronunciation": "pyoo-suh-LAN-uh-muhs",
+    "definition": "Showing a lack of courage or determination; timid.",
+    "example": "The committee's pusillanimous response satisfied no one.",
+    "synonyms": [
+      "cowardly",
+      "timid",
+      "craven",
+      "spineless"
+    ]
+  },
+  {
+    "word": "sycophant",
+    "pos": "noun",
+    "pronunciation": "SIK-uh-fuhnt",
+    "definition": "A person who flatters someone important in order to gain an advantage.",
+    "example": "The new manager was soon surrounded by sycophants praising every idea.",
+    "synonyms": [
+      "flatterer",
+      "toady",
+      "bootlicker"
+    ]
+  },
+  {
+    "word": "obfuscate",
+    "pos": "verb",
+    "pronunciation": "OB-fuh-skayt",
+    "definition": "To make something deliberately unclear or difficult to understand.",
+    "example": "The report seemed designed to obfuscate rather than inform.",
+    "synonyms": [
+      "obscure",
+      "muddle",
+      "befog",
+      "cloud"
+    ]
+  },
+  {
+    "word": "ineffable",
+    "pos": "adjective",
+    "pronunciation": "in-EF-uh-buhl",
+    "definition": "Too great or extreme to be expressed in words.",
+    "example": "Standing at the summit, she felt an ineffable sense of calm.",
+    "synonyms": [
+      "indescribable",
+      "inexpressible",
+      "unutterable"
+    ]
+  },
+  {
+    "word": "mellifluous",
+    "pos": "adjective",
+    "pronunciation": "muh-LIF-loo-uhs",
+    "definition": "Sweet or musical; pleasant to hear.",
+    "example": "The narrator's mellifluous voice made even the footnotes enjoyable.",
+    "synonyms": [
+      "dulcet",
+      "honeyed",
+      "euphonious"
+    ]
+  },
+  {
+    "word": "loquacious",
+    "pos": "adjective",
+    "pronunciation": "loh-KWAY-shuhs",
+    "definition": "Tending to talk a great deal; talkative.",
+    "example": "Our loquacious taxi driver narrated the entire history of the city.",
+    "synonyms": [
+      "talkative",
+      "garrulous",
+      "voluble",
+      "chatty"
+    ]
+  },
+  {
+    "word": "sanguine",
+    "pos": "adjective",
+    "pronunciation": "SANG-gwin",
+    "definition": "Optimistic or positive, especially in a difficult situation.",
+    "example": "Despite the delays, the engineers remained sanguine about the launch.",
+    "synonyms": [
+      "optimistic",
+      "hopeful",
+      "confident"
+    ]
+  },
+  {
+    "word": "pernicious",
+    "pos": "adjective",
+    "pronunciation": "per-NISH-uhs",
+    "definition": "Having a harmful effect, especially in a gradual or subtle way.",
+    "example": "Rumour can have a pernicious effect on a small team's morale.",
+    "synonyms": [
+      "harmful",
+      "insidious",
+      "baneful",
+      "corrosive"
+    ]
+  },
+  {
+    "word": "truculent",
+    "pos": "adjective",
+    "pronunciation": "TRUK-yuh-luhnt",
+    "definition": "Eager or quick to argue or fight; aggressively defiant.",
+    "example": "The truculent witness glared at the lawyer before every answer.",
+    "synonyms": [
+      "belligerent",
+      "combative",
+      "defiant",
+      "pugnacious"
+    ]
+  },
+  {
+    "word": "equanimity",
+    "pos": "noun",
+    "pronunciation": "ee-kwuh-NIM-i-tee",
+    "definition": "Mental calmness and composure, especially in a difficult situation.",
+    "example": "She accepted the bad news with remarkable equanimity.",
+    "synonyms": [
+      "composure",
+      "serenity",
+      "poise",
+      "aplomb"
+    ]
+  },
+  {
+    "word": "desultory",
+    "pos": "adjective",
+    "pronunciation": "DES-uhl-tor-ee",
+    "definition": "Lacking a plan, purpose, or enthusiasm; going from one thing to another.",
+    "example": "They made desultory conversation while waiting for the train.",
+    "synonyms": [
+      "aimless",
+      "haphazard",
+      "perfunctory"
+    ]
+  },
+  {
+    "word": "inveigle",
+    "pos": "verb",
+    "pronunciation": "in-VAY-guhl",
+    "definition": "To persuade someone to do something by deception or flattery.",
+    "example": "He inveigled his way into the meeting by claiming to be a consultant.",
+    "synonyms": [
+      "cajole",
+      "wheedle",
+      "coax",
+      "beguile"
+    ]
+  },
+  {
+    "word": "penumbra",
+    "pos": "noun",
+    "pronunciation": "puh-NUHM-bruh",
+    "definition": "A partial shadow surrounding a complete one; a peripheral or uncertain area.",
+    "example": "The policy existed in a legal penumbra that neither side wanted to test."
+  },
+  {
+    "word": "defenestrate",
+    "pos": "verb",
+    "pronunciation": "dee-FEN-uh-strayt",
+    "definition": "To throw someone or something out of a window; to remove someone from a position of power.",
+    "example": "The board moved swiftly to defenestrate the chief executive."
+  },
+  {
+    "word": "apricity",
+    "pos": "noun",
+    "pronunciation": "uh-PRIS-i-tee",
+    "definition": "The warmth of the sun in winter.",
+    "example": "We lingered on the bench, savouring the brief apricity of a January afternoon."
+  },
+  {
+    "word": "sotto voce",
+    "pos": "adverb / adjective",
+    "pronunciation": "SOT-oh VOH-chay",
+    "definition": "In a quiet voice, as if not to be overheard.",
+    "example": "\"This will never work,\" he muttered sotto voce as the toast began.",
+    "synonyms": [
+      "quietly",
+      "under one's breath",
+      "in an undertone"
+    ]
+  }
+]

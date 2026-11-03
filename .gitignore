@@ -1,0 +1,4 @@
+# Excel lock files created while words.xlsx is open
+~$*.xlsx
+__pycache__/
+words.json.tmp
